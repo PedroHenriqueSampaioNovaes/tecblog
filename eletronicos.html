@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo/estilo.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <title>TecBlog - Eletrônicos</title>
+    </head>
+    <body>
+        <header>
+            <h1>Tec<span id="branco">Blog</span></h1>
+            <nav>
+                <a href="index.html" title="Home">Home</a>
+                <a href="jogos.html" rel="next" title="Jogos">Jogos</a>
+                <a href="celulares.html" rel="next" title="Celulares">Celulares</a>
+                <a href="informatica.html" title="Informática">Informática</a>
+                <a href="eletronicos.html" title="Eletrônicos">Eletrônicos</a>
+            </nav>
+        </header>
+        <main>
+            <article id="conteudo-postagens"><!-- área postagens -->
+                <div class="postagem primeira">
+                    <h1>Título de postagem 1</h1>
+                    <span class="data">
+                        postado <time>14 outubro 2021</time>
+                    </span>
+
+                    <img src="img/imagem8.jpg" alt="">
+
+                    <p>Ducimus blanditiis eligendi amet, autem ipsam voluptate, magnam labore alias ratione saepe voluptatibus qui aliquam nam officiis ea? Laudantium molestiae in deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur corrupti adipisci voluptates, illum cupiditate doloribus aliquid fugit, ad voluptas unde? Minus aliquam eveniet dolores sit veritatis molestiae assumenda dolorum. <span id="pontos-post1">...</span><span id="mais-post1" class="mais">Esse voluptates soluta ducimus eius ad, fugiat, libero voluptatibus blanditiis nam nihil beatae nesciunt modi porro, fuga possimus repellendus optio assumenda distinctio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem illum saepe, molestias placeat in assumenda harum et, earum aliquid temporibus blanditiis quia corrupti corporis dolorum! Similique perferendis accusamus ad officia?</p></span>
+                    <a id="linkLeiaMais-post1" onclick="leiaMais('pontos-post1', 'mais-post1', 'linkLeiaMais-post1')">Leia mais</a>
+                </div>
+
+                <div class="postagem ultima">
+                    <h1>Título de postagem 2</h1>
+                    <span class="data">
+                        postado <time>14 outubro 2021</time>
+                    </span>
+
+                    <img src="img/imagem9.jpg" alt="">
+
+                    <p>Consequatur, ipsa ab, earum in, odit voluptatem corrupti delectus beatae voluptate dolore ad praesentium hic asperiores dignissimos adipisci nobis! Exercitationem, sequi? Ipsa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste ex hic debitis autem mollitia esse nisi accusantium obcaecati nihil quas minima, sint enim? Sapiente ex, vel nam temporibus pariatur nemo! <span id="pontos-post2">...</span><span id="mais-post2" class="mais">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptatum earum quidem magnam veniam culpa atque, esse eos? Blanditiis esse suscipit, ad alias quod dignissimos quidem ut! Non, reiciendis soluta? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, numquam magni sequi, quam rerum optio sapiente consectetur distinctio, accusantium doloremque dolore officia reiciendis atque corporis earum facere exercitationem! Eos, recusandae?</p></span>
+                    <a id="linkLeiaMais-post2" onclick="leiaMais('pontos-post2', 'mais-post2', 'linkLeiaMais-post2')">Leia mais</a>
+                </div>
+            </article><!-- /fim área postagens -->
+            <aside><!-- área lateral -->
+                <section class="area-lateral">
+                    <h1>Postagens recentes</h1>
+                    <div class='postagem-lateral'>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span id="pontos-recentes1">...</span><span id="mais-recentes1" class="mais">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum nulla nisi cupiditate quo excepturi quod deserunt, a distinctio accusantium nobis qui id itaque tenetur odio consequuntur? Dolorum, nulla aperiam!</p></span>
+                        <a id="link-recentes1" onclick="leiaMais('pontos-recentes1', 'mais-recentes1', 'link-recentes1')">Leia mais</a>
+                    </div>
+                    <hr>
+                    <div class='postagem-lateral'>
+                        <p>Tempora, molestias culpa nemo vero numquam dolore vel cum incidunt tempore adipisci unde sapiente! <span id="pontos-recentes2">...</span><span id="mais-recentes2" class="mais">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem minima odio est voluptates harum sed id ipsam molestiae eos voluptatum doloremque laudantium at sequi ex, placeat aspernatur. Provident, ipsum!</p></span>
+                        <a id="link-recentes2" onclick="leiaMais('pontos-recentes2', 'mais-recentes2', 'link-recentes2')">Leia mais</a>
+                    </div>
+                </section>
+
+                <section class="area-lateral">
+                    <h1>Categorias</h1>
+                    <nav>
+                        <ul style="list-style: none;">
+                            <li>
+                                <a href="index.html" class="link-categoria">Home</a>
+                            </li>
+                            <li>
+                                <a href="jogos.html" rel="next" class="link-categoria">Jogos</a>
+                            </li>
+                            <li>
+                                <a href="celulares.html" rel="next" class="link-categoria">Celulares</a>
+                            </li>
+                            <li>
+                                <a href="informatica.html" class="link-categoria">Informática</a>
+                            </li>
+                            <li>
+                                <a href="eletronicos.html" class="link-categoria">Eletrônicos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </aside><!-- /fim área lateral -->
+            <div class="clear"></div>
+            <footer>
+                <p>Todos os direitos reservados &copy;</p>
+            </footer>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>

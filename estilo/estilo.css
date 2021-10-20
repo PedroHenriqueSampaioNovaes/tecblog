@@ -1,0 +1,257 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #e6e6e6;
+    --cor2: #F7B600;
+    --cor3: white;
+    --cor4: #4E4E4E;
+    --cor5: #CCCCCC;
+    --cor6: #565656;
+}
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: var(--cor1);
+}
+
+/*
+*** Cabeçalho ***
+*/
+
+header {
+    background-color: var(--cor2);
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0px -4px 14px 0px #000000a6;
+}
+
+header > h1 {
+    padding: 10px;
+    font-size: 2.5em;
+    color: var(--cor4);
+}
+
+header > h1 > span {
+    color: var(--cor3);
+}
+
+header > nav {
+    padding: 10px;
+}
+
+header a {
+    padding: 8px 12px;
+    color: var(--cor3);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header a:hover {
+    background-color: var(--cor3);
+    color: #F7B600;
+}
+
+/*
+*** Principal ***
+*/
+main {
+    margin: auto;
+    max-width: 920px;
+    padding: 15px;
+}
+
+article#conteudo-postagens {
+    max-width: 660px;
+    float: left;
+}
+
+div.postagem {
+    background-color: var(--cor3);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 4px 0px #00000036;
+}
+
+div.primeira {
+    border-radius: 5px 5px 0 0;
+}
+
+div.ultima {
+    border-radius: 0 0 5px 5px;
+}
+
+article > div.postagem > h1 {
+    color: var(--cor2);
+    font-size: 1.5em;
+}
+
+article div.postagem span.data {
+    display: block;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+
+article div.postagem p {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+div.postagem p span.mais, section.area-lateral span.mais {
+    display: none;
+}
+
+div.postagem p span#pontos {
+    display: inline;
+}
+
+img {
+    width: 100%;
+    box-shadow: 0px 0px 1px 1px #0000008a;
+    border-radius: 10px;
+}
+
+main a {
+    color: var(--cor2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/*
+*** Conteúdo lateral ***
+*/
+aside {
+    width: 240px;
+    float: right;
+}
+
+section.area-lateral { 
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 4px 0px #00000036;
+}
+
+section.area-lateral > h1 {
+    background-color: var(--cor5);
+    color: var(--cor6);
+    padding: 5px;
+}
+
+div.postagem-lateral {
+    padding: 5px;
+}
+
+div.postagem-lateral > p {
+    font-size: 0.8em;
+}
+
+div.postagem-lateral > a {
+    font-size: 0.9em;
+}
+
+aside nav ul a.link-categoria {
+    font-size: 1.1em;
+}
+
+section.area-lateral > hr {
+    border: 0px;
+    border-bottom: 0.1px dotted var(--cor5);
+}
+
+nav > ul > li {
+    margin-bottom: 2px;
+}
+
+/*
+*** Limpar fluxo da página ***
+*/
+div.clear {
+    clear: both;
+}
+
+/*
+*** Rodapé ***
+*/
+footer {
+    background-color: var(--cor5);
+    padding: 15px;
+}
+
+footer > p {
+    text-align: center;
+}
+
+/*
+*** Media Queries ***
+*/
+@media (max-width: 968px) {
+    aside {
+        float: none;
+        clear: both;
+        width: 100%;
+    }
+
+    header a {
+        display: inline-block;
+    }
+
+    main div.postagem a {
+        padding: 4px 0 0 0;
+        display: inline-block;
+    }
+
+    article#conteudo-postagens {
+        margin: auto;
+        float: none;
+    }
+
+    article > div.postagem > h1 {
+        font-size: 1.2em;
+    }
+
+    div.postagem-lateral > p {
+        font-size: 1em;
+    }
+
+    div.postagem-lateral > a {
+        font-size: 1em;
+    }
+
+    section.area-lateral a.link-categoria {
+        display: inline-block;
+        font-size: 1.25em;
+        margin-bottom: 0px;
+        padding: 8px;
+    }
+
+    footer {
+        margin: 0 -15px -15px -15px;
+    }
+}
+
+@media (min-width: 500px) and ( max-width: 968px) {
+    section.area-lateral > h1 {
+        text-align: center;
+    }
+
+    aside {
+        margin: auto;
+        max-width: 660px;
+    }
+
+    section.area-lateral > nav {
+        text-align: center;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo/estilo.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <title>TecBlog - O seu Blog de tecnologia</title>
+        <meta name="description" content="Site de tecnologia. Saiba tudo sobre o mundo da tecnologia e dos games!">
+    </head>
+    <body>
+        <header>
+            <h1>Tec<span id="branco">Blog</span></h1>
+            <nav>
+                <a href="index.html" title="Home">Home</a>
+                <a href="jogos.html" rel="next" title="Jogos">Jogos</a>
+                <a href="celulares.html" rel="next" title="Celulares">Celulares</a>
+                <a href="informatica.html" rel="next" title="Informática">Informática</a>
+                <a href="eletronicos.html" rel="next" title="Eletrônicos">Eletrônicos</a>
+            </nav>
+        </header>
+        <main>
+            
+            <article id="conteudo-postagens"><!-- área postagens -->
+                <div class="postagem primeira">
+                    <h1>Título de postagem 1</h1>
+                    <span class="data">
+                        postado <time>10 outubro 2021</time>
+                    </span>
+
+                    <img src="img/imagem1.jpg" alt="Um notebook e uma xícara de café sobre uma mesa">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus accusantium libero earum vero deleniti magni quae delectus dolores iste expedita minima, provident impedit dolorem, harum commodi eius? Atque, corporis ea?Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span id="pontos-post1">...</span><span id="mais-post1" class="mais">Eveniet rerum est saepe corporis molestiae aspernatur perspiciatis exercitationem quisquam. Assumenda esse numquam sit id provident veritatis ducimus facere tempore voluptates quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum nobis autem maxime dolorum. Vero aspernatur iure rem assumenda sed cumque, excepturi, non facere incidunt unde, inventore reprehenderit recusandae nesciunt optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cupiditate quis corporis aliquam tenetur magnam assumenda exercitationem beatae, molestias fuga numquam. Fugit asperiores ipsa reiciendis animi eius, temporibus adipisci id.</p></span>
+                    <a id="linkLeiaMais-post1" onclick="leiaMais('pontos-post1', 'mais-post1', 'linkLeiaMais-post1')">Leia mais</a>
+                </div>
+
+                <div class="postagem ultima">
+                    <h1>Título de postagem 2</h1>
+                    <span class="data">
+                        postado <time>10 outubro 2021</time>
+                    </span>
+
+                    <img src="img/imagem2.jpg" alt="MacBook, notebook, tablet e um teclado sobre uma mesa">
+
+                    <p>Autem ullam id temporibus repellendus libero voluptas corrupti necessitatibus porro dolor totam animi atque maiores dignissimos, dolorum modi. Voluptas cumque explicabo optio? Lorem ipsum dolor, sit amet consectetur adipisicing elit. <span id="pontos-post2">...</span><span id="mais-post2" class="mais">Similique unde, qui inventore corporis odit non maiores reprehenderit delectus voluptate molestias! Consequatur ullam amet aut nemo voluptatibus eos, suscipit ipsa sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut modi quasi, officia provident delectus atque doloribus dignissimos sequi quisquam est dolores inventore praesentium, accusantium, vitae minima. Amet, eligendi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, reprehenderit! Consectetur doloribus mollitia nesciunt commodi sapiente, quidem culpa nam sed, distinctio deleniti placeat vitae exercitationem et soluta obcaecati pariatur sunt?</p></span>
+                    <a id="linkLeiaMais-post2" onclick="leiaMais('pontos-post2', 'mais-post2', 'linkLeiaMais-post2')">Leia mais</a>
+                </div>
+            </article><!-- /fim área postagens -->
+            <aside><!-- área lateral -->
+                <section class="area-lateral">
+                    <h1>Postagens recentes</h1>
+                    <div class='postagem-lateral'>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span id="pontos-recentes1">...</span><span id="mais-recentes1" class="mais">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum nulla nisi cupiditate quo excepturi quod deserunt, a distinctio accusantium nobis qui id itaque tenetur odio consequuntur? Dolorum, nulla aperiam!</p></span>
+                        <a id="link-recentes1" onclick="leiaMais('pontos-recentes1', 'mais-recentes1', 'link-recentes1')">Leia mais</a>
+                    </div>
+                    <hr>
+                    <div class='postagem-lateral'>
+                        <p>Tempora, molestias culpa nemo vero numquam dolore vel cum incidunt tempore adipisci unde sapiente! <span id="pontos-recentes2">...</span><span id="mais-recentes2" class="mais">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem minima odio est voluptates harum sed id ipsam molestiae eos voluptatum doloremque laudantium at sequi ex, placeat aspernatur. Provident, ipsum!</p></span>
+                        <a id="link-recentes2" onclick="leiaMais('pontos-recentes2', 'mais-recentes2', 'link-recentes2')">Leia mais</a>
+                    </div>
+                </section>
+
+                <section class="area-lateral">
+                    <h1>Categorias</h1>
+                    <nav>
+                        <ul style="list-style: none;">
+                            <li>
+                                <a href="index.html" class="link-categoria">Home</a>
+                            </li>
+                            <li>
+                                <a href="jogos.html" rel="next" class="link-categoria">Jogos</a>
+                            </li>
+                            <li>
+                                <a href="celulares.html" rel="next" class="link-categoria">Celulares</a>
+                            </li>
+                            <li>
+                                <a href="informatica.html" rel="next" class="link-categoria">Informática</a>
+                            </li>
+                            <li>
+                                <a href="eletronicos.html" rel="next" class="link-categoria">Eletrônicos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </aside><!-- /fim área lateral -->
+            <div class="clear"></div>
+            <footer>
+                <p>Todos os direitos reservados &copy;</p>
+            </footer>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>
